@@ -39,12 +39,17 @@ namespace ShootingDice
             highPlayer.Name = "William Winsagain";
 
             highPlayer.Play(player2);
+
+            Player realHuman = new HumanPlayer();
+            realHuman.Name = "Jane Doe";
+
+            realHuman.Play(player3);
         
             
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smackTalkPlayer, highPlayer
+                player1, player2, player3, large, smackTalkPlayer, highPlayer, realHuman
             };
 
             PlayMany(players);
