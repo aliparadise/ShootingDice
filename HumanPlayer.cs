@@ -9,11 +9,11 @@ namespace ShootingDice
     {
         public override void Play(Player other)
         {
-            Console.WriteLine("Please enter a number for your roll");
-            string enterRoll = Console.ReadLine();
-
-            int myRoll = Roll();
+            Console.WriteLine("Please enter a number for your roll.");
+            int myRoll = int.Parse(Console.ReadLine());
             int otherRoll = other.Roll();
+            
+
 
             Console.WriteLine($"{Name} rolls a {myRoll}");
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");
